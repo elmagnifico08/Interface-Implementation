@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Date implements IDateSorter {
+public class RDateSorter implements IDateSorter {
 
     @Override
     public Collection<LocalDate> sortDates(List<LocalDate> unsortedDates) {

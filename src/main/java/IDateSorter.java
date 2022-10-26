@@ -9,7 +9,7 @@ import java.util.List;
  * important.
  *
  *
- * The Date sorter interface, implement the single method
+ * The RDateSorter sorter interface, implement the single method
  * within this interface.
  */
 public interface IDateSorter {

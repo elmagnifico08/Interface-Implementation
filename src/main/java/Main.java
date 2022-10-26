@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        IDateSorter dateSorter = new Date();
+        IDateSorter dateSorter = new RDateSorter();
 
         List<LocalDate> unsortedList = new ArrayList<>();
         unsortedList.add(LocalDate.of(2005, 07, 01));
