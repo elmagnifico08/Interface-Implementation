@@ -7,13 +7,13 @@ public class Main {
         IDateSorter dateSorter = new RDateSorter();
 
         List<LocalDate> unsortedList = new ArrayList<>();
-        unsortedList.add(LocalDate.of(2005, 07, 01));
-        unsortedList.add(LocalDate.of(2005, 01, 02));
-        unsortedList.add(LocalDate.of(2005, 01, 01));
-        unsortedList.add(LocalDate.of(2005, 05, 03));
-        unsortedList.add(LocalDate.of(2018, 04, 17));
-        unsortedList.add(LocalDate.of(2012, 04, 21));
-        unsortedList.add(LocalDate.of(2015, 03, 13));
+        unsortedList.add(LocalDate.of(2005, 7, 1));
+        unsortedList.add(LocalDate.of(2005, 1, 2));
+        unsortedList.add(LocalDate.of(2005, 1, 1));
+        unsortedList.add(LocalDate.of(2005, 5, 3));
+        unsortedList.add(LocalDate.of(2018, 4, 17));
+        unsortedList.add(LocalDate.of(2012, 9, 21));
+        unsortedList.add(LocalDate.of(2015, 3, 13));
         unsortedList.add(LocalDate.of(2020, 12, 11));
 
         System.out.println(dateSorter.sortDates(unsortedList));
