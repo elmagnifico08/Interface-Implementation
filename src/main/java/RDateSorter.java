@@ -9,19 +9,20 @@ public class RDateSorter implements IDateSorter {
     @Override
     public Collection<LocalDate> sortDates(List<LocalDate> unsortedDates) {
 
-        List<LocalDate> haveR = unsortedDates.stream()
+        List<LocalDate> result = unsortedDates.stream()
                 .filter(e -> e.getMonth().toString()
-                        .contains(String.valueOf('R')))
+                        .contains("R"))
                 .sorted()
                 .collect(Collectors.toList());
 
         List<LocalDate> noHaveR = unsortedDates.stream()
                 .filter(e -> !e.getMonth().toString()
-                        .contains(String.valueOf('R')))
+                        .contains("R"))
                 .sorted(Collections.reverseOrder()).toList();
 
-        List<LocalDate> result = haveR;
+
         result.addAll(noHaveR);
+
         return result;
     }
 }
